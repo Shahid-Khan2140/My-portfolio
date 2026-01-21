@@ -91,56 +91,68 @@ ul {
 ========================================
 */
 .preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #020202;
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #020202;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:
+    opacity 0.5s ease,
+    visibility 0.5s ease;
 }
 
 .preloader.hidden {
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .loader-content {
-    text-align: center;
+  text-align: center;
 }
 
 .loader-text {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--text-main);
-    display: block;
-    margin-bottom: 20px;
-    letter-spacing: -1px;
-    opacity: 0;
-    animation: fadeInUp 0.8s ease forwards;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+  display: block;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
 }
 
 .loader-bar {
-    width: 0;
-    height: 2px;
-    background: var(--accent-primary);
-    margin: 0 auto;
-    box-shadow: 0 0 10px var(--accent-primary);
-    animation: loadBar 1.5s ease-in-out forwards 0.5s;
+  width: 0;
+  height: 2px;
+  background: var(--accent-primary);
+  margin: 0 auto;
+  box-shadow: 0 0 10px var(--accent-primary);
+  animation: loadBar 1.5s ease-in-out forwards 0.5s;
 }
 
 @keyframes loadBar {
-    0% { width: 0; }
-    100% { width: 100px; }
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100px;
+  }
 }
 
 @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* 
@@ -149,20 +161,20 @@ ul {
 ========================================
 */
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--bg-dark);
+  background: var(--bg-dark);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #333;
-    border-radius: 4px;
+  background: #333;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--accent-primary);
+  background: var(--accent-primary);
 }
 
 /* 
@@ -171,13 +183,13 @@ ul {
 ========================================
 */
 #particles-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .container {
@@ -243,14 +255,14 @@ ul {
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo-img {
-    height: 40px;
-    width: auto;
-    object-fit: contain;
+  height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 .navbar.scrolled {
@@ -1128,15 +1140,15 @@ ul {
 ========================================
 */
 .project-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.8s ease;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+  display: block;
 }
 
 .project-card:hover .project-img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* 
@@ -1206,5 +1218,108 @@ ul {
 
   .hero-buttons {
     flex-direction: column;
+  }
+}
+
+/* 
+========================================
+   UI ELEMENTS (New Features)
+========================================
+*/
+
+/* Scroll Progress Bar */
+.scroll-progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  z-index: 9999;
+  background: transparent;
+}
+
+.scroll-progress-bar {
+  height: 100%;
+  background: var(--gradient-main);
+  width: 0%;
+  box-shadow: 0 0 10px var(--accent-primary);
+  border-radius: 0 2px 2px 0;
+}
+
+/* Custom Cursor */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-primary);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(0, 242, 255, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.1s,
+    height 0.1s,
+    background-color 0.1s,
+    transform 0.1s;
+  display: none;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  background: rgba(10, 25, 47, 0.8);
+  border: 1px solid var(--accent-primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent-primary);
+  font-size: 1.2rem;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.back-to-top.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--accent-primary);
+  color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 242, 255, 0.6);
+}
+
+@media (min-width: 992px) {
+  .cursor-dot,
+  .cursor-outline {
+    display: block;
   }
 }
