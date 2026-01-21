@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shahid Khan</title>
+    <meta
+      name="description"
+      content="Portfolio of Shahid Khan, a Full-Stack Developer & AI Enthusiast specializing in scalable web applications and premium user experiences."
+    />
+
+    <!-- Google Fonts: Inter & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dark-theme">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-content">
+            <span class="loader-text">Shahid Khan<span class="accent">.</span></span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Background Elements -->
+    <canvas id="particles-canvas"></canvas>
+    <div class="bg-gradient-orb orb-1"></div>
+    <div class="bg-gradient-orb orb-2"></div>
+    <div class="noise-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#home" class="logo">
+          <img src="assets/logo.png" alt="Shahid Khan Logo" class="logo-img">
+        </a>
+        <div class="nav-links">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#education" class="mobile-link">Education</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h2 class="greeting fade-up">
+            Hi, I'm <span class="accent-text">Shahid Khan</span>
+          </h2>
+          <h1 class="hero-title fade-up delay-100">
+            <span class="typing-text"></span><span class="cursor">|</span>
+          </h1>
+          <p class="hero-summary fade-up delay-200">
+            I design and build scalable web applications and AI-powered
+            platforms with a focus on performance, security, and exceptional
+            user experience.
+          </p>
+          <div class="hero-buttons fade-up delay-300">
+            <a href="#contact" class="btn btn-primary">Contact Me</a>
+            <a href="assets/SANDHI_M_SHAHID_F_Internship_Resume.pdf" target="_blank" class="btn btn-secondary"
+              ><i class="fas fa-download"></i> Resume</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator fade-up delay-500">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container about-container">
+        <div class="section-header fade-up">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-image-wrapper fade-right">
+            <div class="about-image">
+              <img src="assets/My profile pic.jpg.jpeg" alt="Shahid Khan Profile" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+          <div class="about-text fade-left">
+            <h3>Sandhi M. Shahid F.</h3>
+            <p class="highlight">
+              Full-Stack Developer | BCA Student | AI Enthusiast
+            </p>
+            <p>
+              Passionate about bridging the gap between complex algorithms and
+              intuitive user interfaces. With a strong foundation in modern web
+              technologies and a keen eye for design, I create digital
+              experiences that are not only functional but also visually
+              stunning.
+            </p>
+            <p>
+              Currently focusing on integrating AI solutions into web platforms
+              to solve real-world problems. My goal is to work with
+              forward-thinking teams to build the next generation of software
+              products.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Years Coding</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">5*</span>
+                <span class="stat-label">Experience</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Languages -->
+          <div class="skill-card tilt-card fade-up">
+            <div class="card-icon"><i class="fas fa-code"></i></div>
+            <h3>Languages</h3>
+            <ul class="skill-list">
+              <li>JavaScript (ES6+)</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>C# / .NET</li>
+              <li>C++</li>
+              <li>HTML5 & CSS3</li>
+            </ul>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-card tilt-card fade-up delay-100">
+            <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Frontend</h3>
+            <ul class="skill-list">
+              <li>React.js</li>
+              <li>Next.js</li>
+              <li>Tailwind / Sass</li>
+              <li>Three.js</li>
+              <li>Framer Motion</li>
+            </ul>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-card tilt-card fade-up delay-200">
+            <div class="card-icon"><i class="fas fa-server"></i></div>
+            <h3>Backend</h3>
+            <ul class="skill-list">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Django</li>
+              <li>RESTful APIs</li>
+              <li>GraphQL</li>
+            </ul>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-card tilt-card fade-up">
+            <div class="card-icon"><i class="fas fa-database"></i></div>
+            <h3>Databases</h3>
+            <ul class="skill-list">
+              <li>MongoDB</li>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>Firebase</li>
+              <li>Redis</li>
+            </ul>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card tilt-card fade-up delay-100">
+            <div class="card-icon"><i class="fas fa-tools"></i></div>
+            <h3>Tools</h3>
+            <ul class="skill-list">
+              <li>Git & GitHub</li>
+              <li>Docker</li>
+              <li>AWS</li>
+              <li>Figma</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+
+          <!-- Core Concepts -->
+          <div class="skill-card tilt-card fade-up delay-200">
+            <div class="card-icon"><i class="fas fa-brain"></i></div>
+            <h3>Core Concepts</h3>
+            <ul class="skill-list">
+              <li>Data Structures</li>
+              <li>Algorithms</li>
+              <li>OOP</li>
+              <li>System Design</li>
+              <li>Agile/Scrum</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2 class="section-title">Experience</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content tilt-card">
+              <div class="date">Aug 2025 – Present</div>
+              <h3>Founder & Lead Developer</h3>
+              <p class="company">AthenaAI • Hybrid</p>
+              <ul class="job-details">
+                <li>
+                  <i class="fas fa-rocket"></i> Founded and developed AthenaAI, a suite of advanced AI assistants aimed at developers and students.
+                </li>
+                <li>
+                  <i class="fas fa-code-branch"></i> Architected the full-stack infrastructure using React, Node.js, and Python.
+                </li>
+                <li>
+                  <i class="fas fa-users"></i> Leading the product vision and integration of cutting-edge LLMs like Gemini Pro.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content tilt-card">
+              <div class="date">Jan 2026 – Present</div>
+              <h3>Full Stack Developer (Trainee)</h3>
+              <p class="company">Flikt Technology Web Solutions • Noida, India (Hybrid)</p>
+              <ul class="job-details">
+                <li>
+                  <i class="fas fa-check-circle"></i> Training and internship focused on Full Stack Web Development.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Specializing in Back-End Web Development and Responsive Web Design.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Successfully completed "Login and Register Page" project.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content tilt-card">
+              <div class="date">May 2025 – July 2025</div>
+              <h3>Full-Stack Developer Intern</h3>
+              <p class="company">Friendly IT Solution • Vadodara, India (On-site)</p>
+              <ul class="job-details">
+                <li>
+                  <i class="fas fa-check-circle"></i> Gained hands-on experience in building scalable web applications.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Tech Stack: HTML, CSS, JavaScript, React.js, Node.js.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Focused on frontend and backend integration for seamless user experiences.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2 class="section-title">Education</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- University -->
+          <div class="timeline-item fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content tilt-card">
+              <div class="date">Jul 2023 – Jul 2026</div>
+              <h3>BCA, Computer Science</h3>
+              <p class="company">ITM SLS Baroda University</p>
+              <ul class="job-details">
+                <li><i class="fas fa-graduation-cap"></i> Focus on Web Development, OOP, Database Systems, and Software Engineering.</li>
+                <li><i class="fas fa-code"></i> Skills: C#, Java, Python, Web Design, DBMS, SQL, .NET Framework.</li>
+                <li><i class="fas fa-project-diagram"></i> Pursuing specialization in Full Stack Development and AI-integrated applications.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- High School 2 -->
+          <div class="timeline-item fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content tilt-card">
+              <div class="date">Jun 2022 – May 2023</div>
+              <h3>High School</h3>
+              <p class="company">Matru Shree Amratbaa Bhagat Highschool</p>
+              <ul class="job-details">
+                <li><i class="fas fa-chart-line"></i> Developed business logic, financial reasoning, and analytical thinking skills.</li>
+                <li><i class="fas fa-lightbulb"></i> Focus on data-driven problem solving and interpreting structured information.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- High School 1 -->
+          <div class="timeline-item fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content tilt-card">
+              <div class="date">May 2019 – Jan 2021</div>
+              <h3>High School</h3>
+              <p class="company">Shree Raneshwar Vidhyalaya, Vadodara</p>
+              <ul class="job-details">
+                <li><i class="fas fa-square-root-alt"></i> Strong foundation in Mathematics and Logical Reasoning.</li>
+                <li><i class="fas fa-laptop"></i> Early exposure to coding principles through IT Club activities.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: AthenaAI (Main / Full Stack) -->
+          <div class="project-card tilt-card fade-up">
+            <div class="project-image">
+              <div class="project-overlay"></div>
+              <img src="assets/AthenaAi-FullStack.png" alt="AthenaAI Full Stack" class="project-img">
+            </div>
+            <div class="project-info">
+              <h3>
+                <img src="assets/AthenaAI-Logo.png" alt="AthenaAI Logo" style="height: 35px; width: auto; vertical-align: middle; margin-right: 8px; background: rgba(255, 255, 255, 0.9); padding: 5px; border-radius: 50%;">
+                AthenaAI 2.0 (Full Stack)
+              </h3>
+              <p class="project-desc">
+                The flagship AI platform featuring advanced chat capabilities, powered by Gemini 1.5 Pro API. Built for scalability and performance.
+              </p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Gemini 2.5 Pro</span>
+                <span>MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-sm"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+                <a href="#" class="btn-sm"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: AthenaAI (Python Version) -->
+          <div class="project-card tilt-card fade-up delay-100">
+            <div class="project-image">
+              <div class="project-overlay"></div>
+              <img src="assets/AthenaAi-Python.png" alt="AthenaAI Python Version" class="project-img">
+            </div>
+            <div class="project-info">
+              <h3>AthenaAI (Python Ver.)</h3>
+              <p class="project-desc">
+                Advanced AI assistant built with Python & Streamlit. Powered by Gemini for natural language processing and context awareness.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Streamlit</span>
+                <span>Gemini API</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-sm"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+                <a href="#" class="btn-sm"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Velvoura E-Commerce -->
+          <div class="project-card tilt-card fade-up delay-100">
+            <div class="project-image">
+              <div class="project-overlay"></div>
+              <img src="assets/E-commerce Website.png" alt="E-Commerce Website" class="project-img">
+            </div>
+            <div class="project-info">
+              <h3>Velvoura E-Commerce</h3>
+              <p class="project-desc">
+                A premium e-commerce platform for fashion retail with seamless
+                shopping experience, cart management, and payment integration.
+              </p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Redux</span>
+                <span>Node.js</span>
+                <span>Stripe</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-sm"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+                <a href="#" class="btn-sm"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Hotel & Invoice System -->
+          <div class="project-card tilt-card fade-up">
+            <div class="project-image">
+              <div class="project-overlay"></div>
+              <img src="assets/Hotel and Invoice System.png" alt="Hotel & Invoice System" class="project-img">
+            </div>
+            <div class="project-info">
+              <h3>Hotel & Invoice System</h3>
+              <p class="project-desc">
+                Comprehensive management system for hotels including booking,
+                billing, and inventory management modules.
+              </p>
+              <div class="project-tags">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>MySQL</span>
+                <span>Angular</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-sm"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+                <a href="#" class="btn-sm"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Career Advisor -->
+          <div class="project-card tilt-card fade-up delay-100">
+            <div class="project-image">
+              <div class="project-overlay"></div>
+              <img src="assets/CareerAdvisor-New.png" alt="Career Advisor AI" class="project-img">
+            </div>
+            <div class="project-info">
+              <h3>Career Advisor AI</h3>
+              <p class="project-desc">
+                Intelligent career counseling tool for CS students utilizing Machine Learning to suggest optimal career paths.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>ML</span>
+                <span>OpenAI API</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-sm"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+                <a href="#" class="btn-sm"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 5: A+ Studio (Agency Website) -->
+          <div class="project-card tilt-card fade-up">
+            <div class="project-image">
+              <div class="project-overlay"></div>
+              <img src="assets/A-Plus-Studio.png" alt="A+ Studio Agency" class="project-img">
+            </div>
+            <div class="project-info">
+              <h3>A+ Studio Agency</h3>
+              <p class="project-desc">
+                Modern digital product agency website showcasing design and development services with a clean, corporate aesthetic.
+              </p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Tailwind CSS</span>
+                <span>Framer Motion</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" class="btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Business Analytics SaaS -->
+          <div class="project-card tilt-card fade-up delay-100">
+            <div class="project-image">
+              <div class="project-overlay"></div>
+              <img src="assets/Business-SaaS.png" alt="Business Growth SaaS" class="project-img">
+            </div>
+            <div class="project-info">
+              <h3>GrowYourBiz SaaS</h3>
+              <p class="project-desc">
+                High-converting landing page for a business analytics platform focused on growth tracking and engagement metrics.
+              </p>
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>Chart.js</span>
+                <span>CSS Modules</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" class="btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7: InstaBook (Travel) -->
+          <div class="project-card tilt-card fade-up">
+            <div class="project-image">
+              <div class="project-overlay"></div>
+              <img src="assets/InstaBook.png" alt="InstaBook Travel" class="project-img">
+            </div>
+            <div class="project-info">
+              <h3>InstaBook Travel</h3>
+              <p class="project-desc">
+                Adventure travel booking platform featuring exclusive holiday packages, destination guides, and seamless booking flow.
+              </p>
+              <div class="project-tags">
+                <span>HTML5/CSS3</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" class="btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-container">
+        <div class="section-header fade-up">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info fade-right">
+            <h3>Let's Build Something Amazing</h3>
+            <p>
+              I'm currently available for freelance work and internship
+              opportunities. If you have a project that needs some creative
+              touch, let's connect.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:shahidsandhi1786@gmail.com" style="color: inherit;">shahidsandhi1786@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Bodeli, Gujarat, India</span>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://github.com/Shahid-Khan2140" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/sandhi-mohmad-shahid" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://x.com/S_H_A_H_I_D_619" target="_blank" class="social-icon" title="X (Twitter)"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/shahid_.619" target="_blank" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="mailto:shahidsandhi1786@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper glass-panel fade-left">
+            <form class="contact-form">
+              <div class="form-group">
+                <input type="text" id="name" required />
+                <label for="name">Your Name</label>
+                <div class="line"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" required />
+                <label for="email">Your Email</label>
+                <div class="line"></div>
+              </div>
+              <div class="form-group">
+                <textarea id="message" rows="4" required></textarea>
+                <label for="message">Message</label>
+                <div class="line"></div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2026 Shahid Khan | Full-Stack Developer</p>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="resume.html" target="_blank">Web Resume</a>
+            <a href="https://www.linkedin.com/in/sandhi-mohmad-shahid" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
